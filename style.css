@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg?w=1060&t=st=1666992871~exp=1666993471~hmac=0fd6ba89882ae70508fef6d8b0c8fa35642d634d0bd3c342c3428c0a729d459d")
+    #f8f9fd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  /* border: 2px solid red; */
+  width: 30%;
+  height: 650px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.container header {
+  padding: 30px 20px;
+  background-color: #0f9591;
+  color: #fff;
+  /* display: flex;
+  flex-direction: column; */
+}
+.container header h4 {
+  font-size: 20px;
+}
+
+.container header small {
+  display: block;
+  margin: 5px 0 15px;
+  font-size: 13px;
+}
+
+.container header input {
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 14px;
+}
+.container header input:focus {
+  outline: none;
+}
+.filter_user {
+  list-style-type: none;
+  background-color: #fff;
+  max-height: 494px;
+  /* flex: 1; */
+  /* border: 2px solid red; */
+  overflow-y: scroll;
+}
+
+.filter_user li {
+  display: flex;
+  padding: 15px 15px 25px;
+  /* border: 2px solid goldenrod; */
+  align-items: center;
+  /* transition: 2s; */
+  /* transition: 2s; */
+  /* transition-timing-function: ease-in-out; */
+}
+.filter_user li:not(:last-of-type) {
+  border-bottom: 2px solid #eee;
+}
+
+.filter_user li .user-info {
+  margin-left: 10px;
+  /* border: 2px solid green; */
+  width: 100%;
+}
+
+.filter_user li img {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  border-radius: 50px;
+  /* border: 2px solid; */
+}
+.filter_user li .user-info h4 {
+  /* display: inline; */
+  /* width: 100%;
+  height: auto; */
+  /* border: 2px solid blue; */
+  margin-bottom: 10px;
+}
+
+.filter_user li .user-info small {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+}
+
+li.hide {
+  display: none;
+}
